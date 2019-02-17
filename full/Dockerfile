@@ -8,6 +8,8 @@ RUN set -x \
         icu-dev \
         libressl-dev \
         perl \
-        python3
+	python3
+
+RUN pip3 install requests
 
 COPY 30-build-modules.sh /startup-sequence/
